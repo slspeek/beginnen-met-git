@@ -1,7 +1,27 @@
 body {
-  text-align: center;
-} 
-p {
-  font-size:24px;
+	font-family:Arial, sans-serif;
+	font-size:18pt; 
+	padding:1em 10% 2em 10%;
 }
+h1 {
+	font-size:100%;
+	font-weight:normal;
 
+}
+a {
+	color:#0000cc;
+
+}
+a:visited {
+	color:#9900cc;
+}
+a:active {
+	color:#ff0000;
+}
+{
+a:hover {
+	color:#0000ff;
+}
+a:visited:hover {
+	color:#ccooff;
+}
