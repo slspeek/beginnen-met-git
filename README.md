@@ -10,3 +10,11 @@ Nog doen
   * Grunt, Bower installatie
   * Livereload
   * JSHint
+  * git pull
+  * git commit
+  * git status
+  * git push
+  * gh branch maken
+  * git remote
+  * forken op github.com
+  * yo generators
