@@ -8,6 +8,10 @@ h1 {
 	font-weight:normal;
 
 }
+
+code {
+  display: block;
+}
 a {
 	color:#0000cc;
 

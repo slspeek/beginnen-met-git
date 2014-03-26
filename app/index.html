@@ -31,7 +31,7 @@
  <h2>Git clone</h2>
 
  <p>Als eerst moet u de server clonen om vervolgens de benodige data te kopi&euml;ren.</p>
- <p>$ git clone</p>
+ <p><code>$git clone</code>
   
   
   
@@ -43,31 +43,27 @@
   <h2>Git status</h2>
   
  <p>Met dit commando zie je de voortgang van je afgelopen acties. Met name de bestanden die zijn gewijzigd.</p> 
- <p>$ git status</p> 
+ <code>$git status</code>
 
  <h2>Git add</h2>
  
 
  <h2>node.js</h2>
- <ul>
-  <li>
-   Ophalen
-  </li>
-  <li>
-   Uitpakken 
-  </li>
-  <li>
-    Configureren
-  </li>
-  <li>
-    Bouwen
-  </li>
-  <li>
-    Installeren
-  </li>
-  <li>
-    Uitproberen
-  </li>
- </ul>
+ 
+  
+ <h3> Ophalen</h3>
+   <p>Als eerste moeten we het archief met de source ophalen, met de volgende link <a href="http://nodejs.org/dist/v0.10.26/node-v0.10.26.tar.gz">klik hier</a> </p>
+   <h3>Uitpakken</h3>
+   <p>In de terminal maak je een map tools aan met</p> <code>$mkdir tools</code> vervolgt door <code>$cd tools</code> en tot slot <code>$tar xvzf ~/Downloads/node-v0.10.26.tar.gz</code></p>
+   <h3>Configureren</h3>
+   <p>Navigeer de juist uitgepakte map in.   <code>$cd ~/tools/node-v0.10.26/</code>Door de volgende commando worden de bestanden in de juiste map geinstalleerd.   <code>$./configure --prefix=~/tools</code>
+
+   <h3>Bouwen</h3>
+   <code>$make</code>
+   <h3>Installeren</h3>
+   <code>$make install</code>
+   <h3>Uitproberen</h3>
+   <p>Je hebt nu een javascript implementatie buiten de browser</p> <code>$node</code> 
+   <p>Verlaten met Ctrl + d</p>
 </body>
 </html>
