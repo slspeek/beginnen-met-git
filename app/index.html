@@ -43,10 +43,48 @@
   <h2>Git status</h2>
   
  <p>Met dit commando zie je de voortgang van je afgelopen acties. Met name de bestanden die zijn gewijzigd.</p> 
- <code>$git status</code>
+ <code>
+ 
+jeremiah@office19 ~/beginnen-met-git>$ git status<br>
+# On branch master<br>
+# Changes not staged for commit:<br>
+#   (use "git add <file>..." to update what will be committed)<br>
+#   (use "git checkout -- <file>..." to discard changes in working directory)<br>
+#<br>
+#       modified:   app/index.html<br>
+#       modified:   app/styles/main.css<br>
+</code>
 
  <h2>Git add</h2>
+<code> jeremiah@office19 ~/beginnen-met-git> git add app/index.html<br>
+ jeremiah@office19 ~/beginnen-met-git> git status<br>
+ # On branch master<br>
+ # Changes to be committed:<br>
+ #   (use "git reset HEAD <file>..." to unstage)<br>
+ #       modified:   app/index.html<br>
+ # Changes not staged for commit:<br>
+ #   (use "git add <file>..." to update what will be committed)<br>
+ #   (use "git checkout -- <file>..." to discard changes in working directory)<br>
+ #       modified:   app/styles/main.css<br>
+</code>
  
+<h2>Git commit</h2>
+
+<code>
+  jeremiah@office19 ~/beginnen-met-git> git commit <br>
+  [master 638ee54] Node hoofdstuk uitgewerkt<br>
+  2 files changed, 22 insertions(+), 22 deletions(-)<br>
+  jeremiah@office19 ~/beginnen-met-git> git push<br>
+  Counting objects: 11, done.<br>
+  Delta compression using up to 2 threads.<br>
+  Compressing objects: 100% (5/5), done.<br>
+  Writing objects: 100% (6/6), 972 bytes, done.<br>
+  Total 6 (delta 4), reused 0 (delta 0)<br>
+  To git@github.com:slspeek/beginnen-met-git.git<br>
+  4c5d574..638ee54  master -> master<br>
+</code>
+
+
 
  <h2>node.js</h2>
  
@@ -65,5 +103,46 @@
    <h3>Uitproberen</h3>
    <p>Je hebt nu een javascript implementatie buiten de browser</p> <code>$node</code> 
    <p>Verlaten met Ctrl + d</p>
+   <code>
+     
+no changes added to commit (use "git add" and/or "git commit -a")<br>
+jeremiah@office19 ~/beginnen-met-git> git add app/
+app/404.html           app/favicon.ico  app/index.html\~  app/scripts/  app/yo.html  
+app/bower_components/  app/index.html   app/robots.txt    app/styles/   
+jeremiah@office19 ~/beginnen-met-git> git add app/index.html
+jeremiah@office19 ~/beginnen-met-git> git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#       modified:   app/index.html
+#
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#       modified:   app/styles/main.css
+#
+jeremiah@office19 ~/beginnen-met-git> git add app/styles/main.css 
+jeremiah@office19 ~/beginnen-met-git> git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#       modified:   app/index.html
+#       modified:   app/styles/main.css
+#
+jeremiah@office19 ~/beginnen-met-git> git commit 
+[master 638ee54] Node hoofdstuk uitgewerkt
+ 2 files changed, 22 insertions(+), 22 deletions(-)
+jeremiah@office19 ~/beginnen-met-git> git push
+Counting objects: 11, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 972 bytes, done.
+Total 6 (delta 4), reused 0 (delta 0)
+To git@github.com:slspeek/beginnen-met-git.git
+   4c5d574..638ee54  master -> master
+   </code>
 </body>
 </html>
