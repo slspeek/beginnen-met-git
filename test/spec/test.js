@@ -1,14 +1,14 @@
-/* global describe, it */
+/* global expect, describe, it */
 
-(function () {
-describe(function() {
-    'use strict';
+(function() {
+  'use strict';
+  describe(function() {
 
-        describe('maybe a bit more context here', function () {
-            it('should run here few assertions', function () {
+    describe('maybe a bit more context here', function() {
+      it('should run here few assertions', function() {
 
-                expect(1).toBe(1);
-            });
-        });
+        expect(1).toBe(1);
+      });
     });
+  });
 })();
