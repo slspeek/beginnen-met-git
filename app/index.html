@@ -30,20 +30,27 @@
  
  <h2>Git clone</h2>
 
- <p>Als eerst moet u de server clonen om vervolgens de benodige data te kopi&euml;ren.</p>
- <p><code>$git clone</code>
+ <p>Als eerst moet u de repository clonen naar de locale machine.</p>
+ <p><code>$git clone git@github.com:slspeek/beginnen-met-git.git</code>
+
+ <code>
+   cloning into 'beginnen-met-git'...<br>
+   remote: Counting objects: 87, done.<br>
+   remote: Compressing objects: 100% (64/64), done.<br>
+   remote: Total 87 (delta 31), reused 54 (delta 11)<br>
+   Receiving objects: 100% (87/87), 36.67 KiB, done.<br>
+   Resolving deltas: 100% (31/31), done.<br>
+  </code>
   
   
-  
-  <h2>Voortgang clonen</h2>
-  
- 
   
   
   <h2>Git status</h2>
   
- <p>Met dit commando zie je de voortgang van je afgelopen acties. Met name de bestanden die zijn gewijzigd.</p> 
+ <p>Met deze commando zie je de voortgang van je afgelopen acties. Met name de bestanden die zijn gewijzigd.</p> 
+ <p>Na dat u deze commando heeft ingevoerd kunt u aan de hand van de informatie zien dat de index.html en style.css zijn gewijzigd.</p>
  <code>
+   
  
 jeremiah@office19 ~/beginnen-met-git>$ git status<br>
 # On branch master<br>
@@ -56,6 +63,8 @@ jeremiah@office19 ~/beginnen-met-git>$ git status<br>
 </code>
 
  <h2>Git add</h2>
+ <p>Met git add voeg je de veranderingen toe aan de locale host.</p>
+ <p>Na het toevoegen van de veranderingen check met de volgende commando of het is gewerkt. <code>$git status</code> </p>
 <code> jeremiah@office19 ~/beginnen-met-git> git add app/index.html<br>
  jeremiah@office19 ~/beginnen-met-git> git status<br>
  # On branch master<br>
@@ -69,7 +78,7 @@ jeremiah@office19 ~/beginnen-met-git>$ git status<br>
 </code>
  
 <h2>Git commit</h2>
-
+<p>Met git commit schrijf je je veranderingen naar de locale git repository.</p>
 <code>
   jeremiah@office19 ~/beginnen-met-git> git commit <br>
   [master 638ee54] Node hoofdstuk uitgewerkt<br>
@@ -84,6 +93,20 @@ jeremiah@office19 ~/beginnen-met-git>$ git status<br>
   4c5d574..638ee54  master -> master<br>
 </code>
 
+<h2>Git push</h2>
+
+<p>Met git push worden alle opgeslagen bestanden definitief gesaved naar de orginele source.</p>
+
+<code>
+jeremiah@office19 ~/beginnen-met-git> git push<br>
+Counting objects: 11, done.<br>
+Delta compression using up to 2 threads.<br>
+Compressing objects: 100% (5/5), done.<br>
+Writing objects: 100% (6/6), 972 bytes, done.<br>
+Total 6 (delta 4), reused 0 (delta 0)<br>
+To git@github.com:slspeek/beginnen-met-git.git<br>
+   4c5d574..638ee54  master -> master<br>
+</code>
 
 
  <h2>node.js</h2>
@@ -103,46 +126,5 @@ jeremiah@office19 ~/beginnen-met-git>$ git status<br>
    <h3>Uitproberen</h3>
    <p>Je hebt nu een javascript implementatie buiten de browser</p> <code>$node</code> 
    <p>Verlaten met Ctrl + d</p>
-   <code>
-     
-no changes added to commit (use "git add" and/or "git commit -a")<br>
-jeremiah@office19 ~/beginnen-met-git> git add app/
-app/404.html           app/favicon.ico  app/index.html\~  app/scripts/  app/yo.html  
-app/bower_components/  app/index.html   app/robots.txt    app/styles/   
-jeremiah@office19 ~/beginnen-met-git> git add app/index.html
-jeremiah@office19 ~/beginnen-met-git> git status
-# On branch master
-# Changes to be committed:
-#   (use "git reset HEAD <file>..." to unstage)
-#
-#       modified:   app/index.html
-#
-# Changes not staged for commit:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#       modified:   app/styles/main.css
-#
-jeremiah@office19 ~/beginnen-met-git> git add app/styles/main.css 
-jeremiah@office19 ~/beginnen-met-git> git status
-# On branch master
-# Changes to be committed:
-#   (use "git reset HEAD <file>..." to unstage)
-#
-#       modified:   app/index.html
-#       modified:   app/styles/main.css
-#
-jeremiah@office19 ~/beginnen-met-git> git commit 
-[master 638ee54] Node hoofdstuk uitgewerkt
- 2 files changed, 22 insertions(+), 22 deletions(-)
-jeremiah@office19 ~/beginnen-met-git> git push
-Counting objects: 11, done.
-Delta compression using up to 2 threads.
-Compressing objects: 100% (5/5), done.
-Writing objects: 100% (6/6), 972 bytes, done.
-Total 6 (delta 4), reused 0 (delta 0)
-To git@github.com:slspeek/beginnen-met-git.git
-   4c5d574..638ee54  master -> master
-   </code>
-</body>
+   </body>
 </html>
