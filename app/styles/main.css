@@ -3,13 +3,7 @@ body {
 	font-size:18pt; 
 	padding:1em 10% 2em 10%;
 }
-h1 {
-	font-size:100%;
-	font-weight:normal;
-
-}
-
-code {
+code.block {
   display: block;
 }
 a {

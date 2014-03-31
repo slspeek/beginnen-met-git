@@ -5,32 +5,44 @@
     <script src="bower_components/jquery/src/jquery.js"></script>
   </head>
   <body>
-    <h2>Github</h2>
+    <h1>Beginnen met Git</h1>
+    <em>Introductie versiebeheer en projectbeheer op de UNIX command line</em>
+
     <p>Waarom Git? Git is een overzichtelijke manier om al je eigen bestanden en werk op te slaan en te delen.</p>
     <p>Mooi Nederlands vertaald boek: <a href="http://git-scm.com/book/nl"/>klik hier</a></p>
-    <h1>Beginnen met Git</h1>
 
     <iframe width="560" height="315" src="//www.youtube.com/embed/U8GBXvdmHT4" frameborder="0" allowfullscreen>
     </iframe>
 
-    <h1>Wat is versiecontrole?</h1>
+    <h2>Wat is versiebeheer?</h2>
     <div>
       <iframe width="560" height="315" src="//www.youtube.com/embed/8oRjP8yj2Wo?rel=0" frameborder="0" allowfullscreen></iframe>
     </div>
-    <H1>Node.js installatie</h1>
+    <h2>VIM Vi improved</h2>
+    <p>Vim is de allermoeilijkste editor ooit.</p>
+    <h2>Node.js installatie</h2>
 
     <p>Node.js is een javascript-implementatie om javascript zonder browser te kunnen draaien.</p>  
     <p>Om de Node.js interpreter werkend te krijgen zijn er bepaalde stappen nodig die uitgevoerd moet worden.</p> 
     <p>Ga naar de opgegeven link <a href="http://nodejs.org/download/"/>klik hier</a> en selecteer de versie open source.</p>
     <p></p> 
+    <h3> Ophalen</h3>
+    <p>Als eerste moeten we het archief met de source ophalen, met de volgende link <a href="http://nodejs.org/dist/v0.10.26/node-v0.10.26.tar.gz">klik hier</a> </p>
+    <h3>Uitpakken</h3>
+    <p>In de terminal maak je een map tools aan met</p> <code class="block">$mkdir tools</code> <p>en ga de juist aangemaakte map in</p> <code class="block">$cd tools</code> en tot slot <code>$tar xvzf ~/Downloads/node-v0.10.26.tar.gz</code></p>
+    <h3>Configureren</h3>
+    <p>Navigeer de juist uitgepakte map in.   <code>$cd ~/tools/node-v0.10.26/</code>Door de volgende commando worden de bestanden in de juiste map geinstalleerd.   <code>$./configure --prefix=~/tools</code>
+    <h3>Bouwen</h3>
+    <code>$make</code>
+    <h3>Installeren</h3>
+    <code>$make install</code>
+    <h3>Uitproberen</h3>
+    <p>Je hebt nu een javascript implementatie buiten de browser</p> <code>$node</code> 
+    <p>Verlaten met Ctrl + d</p>
+    <h2>&Eacute;&eacute;n wijziging maken</h2>
+    <h3>Git clone</h3>
 
-
-
-
-
-    <h2>Git clone</h2>
-
-    <p>Als eerst moet u de repository clonen naar de locale machine.</p>
+    <p>Als eerst moet je de repository clonen naar je locale machine.</p>
     <p><code>$git clone git@github.com:slspeek/beginnen-met-git.git</code>
 
     <code>
@@ -41,11 +53,15 @@
       Receiving objects: 100% (87/87), 36.67 KiB, done.<br>
       Resolving deltas: 100% (31/31), done.<br>
     </code>
+    <p>Navigeer de locale copy in.</p>
+    <code>$cd beginnen-met-git</code>
+    <p>Open de Moeder der editors</p>
+    <code>$vim app/index.html</code>
 
 
 
 
-    <h2>Git status</h2>
+    <h3>Git status</h3>
 
     <p>Met deze commando zie je de voortgang van je afgelopen acties. Met name de bestanden die zijn gewijzigd.</p> 
     <p>Na dat u deze commando heeft ingevoerd kunt u aan de hand van de informatie zien dat de index.html en style.css zijn gewijzigd.</p>
@@ -62,7 +78,7 @@
       #       modified:   app/styles/main.css<br>
     </code>
 
-    <h2>Git add</h2>
+    <h3>Git add</h3>
     <p>Met git add voeg je de veranderingen toe aan de locale host.</p>
     <p>Na het toevoegen van de veranderingen check met de volgende commando of het is gewerkt. <code>$git status</code> </p>
     <code> jeremiah@office19 ~/beginnen-met-git> git add app/index.html<br>
@@ -77,7 +93,7 @@
       #       modified:   app/styles/main.css<br>
     </code>
 
-    <h2>Git commit</h2>
+    <h3>Git commit</h3>
     <p>Met git commit schrijf je je veranderingen naar de locale git repository.</p>
     <code>
       jeremiah@office19 ~/beginnen-met-git> git commit <br>
@@ -93,7 +109,7 @@
       4c5d574..638ee54  master -> master<br>
     </code>
 
-    <h2>Git push</h2>
+    <h3>Git push</h3>
 
     <p>Met git push worden alle opgeslagen bestanden definitief gesaved naar de orginele source.</p>
 
@@ -108,23 +124,5 @@
       4c5d574..638ee54  master -> master<br>
     </code>
 
-
-    <h2>node.js</h2>
-
-
-    <h3> Ophalen</h3>
-    <p>Als eerste moeten we het archief met de source ophalen, met de volgende link <a href="http://nodejs.org/dist/v0.10.26/node-v0.10.26.tar.gz">klik hier</a> </p>
-    <h3>Uitpakken</h3>
-    <p>In de terminal maak je een map tools aan met</p> <code>$mkdir tools</code> vervolgt door <code>$cd tools</code> en tot slot <code>$tar xvzf ~/Downloads/node-v0.10.26.tar.gz</code></p>
-    <h3>Configureren</h3>
-    <p>Navigeer de juist uitgepakte map in.   <code>$cd ~/tools/node-v0.10.26/</code>Door de volgende commando worden de bestanden in de juiste map geinstalleerd.   <code>$./configure --prefix=~/tools</code>
-
-    <h3>Bouwen</h3>
-    <code>$make</code>
-    <h3>Installeren</h3>
-    <code>$make install</code>
-    <h3>Uitproberen</h3>
-    <p>Je hebt nu een javascript implementatie buiten de browser</p> <code>$node</code> 
-    <p>Verlaten met Ctrl + d</p>
   </body>
 </html>
