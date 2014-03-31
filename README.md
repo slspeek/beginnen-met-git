@@ -3,20 +3,23 @@ beginnen-met-git
 
 inleiding werken met git en github pages
 
-zie demo: http://jordan564.github.io/beginnen-met-git/
-=======
+Gedaan:
+  * Nodejs installatie
+  * Een wijziging maken
+
 
 Nog doen
-  * Nodejs installatie
+  * i3wm
+  * vim
   * Yeoman introductie
   * Grunt, Bower installatie
   * Livereload
   * JSHint
-  * git pull
-  * git commit
-  * git status
-  * git push
+  * yo generators
+ 
+  
+Leuk om te hebben
   * gh branch maken
   * git remote
   * forken op github.com
-  * yo generators
+
