@@ -23,3 +23,7 @@ a:hover {
 a:visited:hover {
 	color:#ccooff;
 }
+iframe
+{
+  margin-bottom:1em;
+}
